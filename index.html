@@ -37,8 +37,10 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Enter</a></li>
-								<li><a href="#work">HowToPlay</a></li>
+								<audio id="clickSound" src="click.mp3"></audio>
+								<audio id="clickSound2" src="click2.mp3"></audio>
+								<li><a href="#intro" onclick="playClickSound()">Enter</a></li>
+								<li><a href="#work" onclick="playClickSound()">HowToPlay</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -50,12 +52,8 @@
 							<article id="intro">
 								<h2 class="major">The Deluted Realm</h2>
 								<span class="image main">
-									<a href="#intro3"><img src="images/Intro.jpg"></a>
+									<a href="#intro3" onclick="playClickSound2()"><img src="images/Intro.jpg"></a>
 								</span>
-								<!--<p>Greetings, <b>Seeker</b> from the Elysian Hood. Welcome to the Chronomatic realm. Seems like you want to seek the Knowledge of the Unknown. To seek the knowledge of the unknown, you must go through the Maze of the Chronomatic realm, named Chronomaze.<br>I am 0110, the keeper of the maze.</p>
-								<ul class="actions" >
-									<li><a href="#intro3" class="button">Continue</a></li>
-								</ul>-->
 							</article>
 
 							<article id="intro3">
@@ -65,8 +63,9 @@
 								<p>As a seeker, you should know that there are mysteries, stories and happenings that were untold, something that requires to seek the knowledge. The maze will prepare you to be able to seek the knowledge of the unknown.</p>
 								<p>There will be desparity and delusions, be aware of that and look for the place where shadows engulfed like roots of a tree.</p>
 								<p>There is very <b>Limited Time</b>. Because the gates of the maze will be sealed very soon by the order of the unknown. Be quick to seek the knowledge.</p>
+								<audio id="clickSound" src="click.mp3"></audio>
 								<ul class="actions" >
-									<li><a href="#intro2" class="button">Continue</a></li>
+									<li><a href="#intro2" class="button" onclick="playClickSound()">Continue</a></li>
 								</ul>
 							</article>
 							
@@ -74,7 +73,7 @@
 							  <h2 class="major">Be Careful!!</h2>
 								<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="10">So are you ready to embark on the journey to the unknown? Shall we begin...</p>
 								<ul class="actions">
-									<li><a href="#server" class="button">Enter</a></li>
+									<li><a href="#server" class="button" onclick="playClickSound()">Enter</a></li>
 								</ul>
 							</article>
 
@@ -87,13 +86,13 @@
 										<div class="fields">
 											<div class="field">
 												<label for="code">Access Code</label>
-												<input type="text" id="code" name="code">
+												<input type="text" id="code" name="code" onclick="playClickSound()">
 											</div>
 			
 											
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Submit" class="button small" /></li>
+											<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
 										</ul>
 									</form>
 								</section>
@@ -145,6 +144,20 @@
 				alert("Invalid Access Code. Please try again.");
 			  }
 			}
+		  </script>
+		  <script>
+			function playClickSound() {
+  var clickSound = document.getElementById("clickSound");
+  clickSound.play();
+}
+
+		  </script>
+		  <script>
+			function playClickSound2() {
+  var clickSound = document.getElementById("clickSound2");
+  clickSound.play();
+}
+
 		  </script>
 		  
 			<script src="assets/js/jquery.min.js"></script>

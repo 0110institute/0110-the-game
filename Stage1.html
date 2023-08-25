@@ -36,20 +36,45 @@
 						</div>
 					  <nav>
 							<ul>
-								<li><a href="#scene1" id="button">Enter</a></li>
+								<audio id="clickSound" src="click.mp3"></audio>
+								<audio id="clickSound2" src="click2.mp3"></audio>
+								<li><a href="#server" id="button" onclick="playClickSound()">Enter</a></li>
+								<audio id="clickSound3" src="solve.mp3" type="audio/mpeg" loop></audio>
+								<li><a href="#" id="button" onclick="playClickSound3()">Music</a></li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
+								<audio id="clickSound" src="click.mp3"></audio>
+								<audio id="clickSound2" src="click2.mp3"></audio>
 
 						<!-- Work -->
+						<article id="server">
+							<h2 class="major">Stage Code</h2>
+							<section>
+	
+								<form id="myForm">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Stage Code:</label>
+											<input type="text" id="code" name="code" onclick="playClickSound()">
+										</div>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+									</ul>
+								</form>
+							</section>
+						</article>
 
 						<article id="scene1">
 							<h2 class="major">Entrance</h2>
 							<span class="image main">
-								<a href="#scene2"><img src="images/Gate.jpg"></a>
+								<a href="#scene2"><img src="images/Gate.jpg" onclick="playClickSound2()"></a>
 							</span>
 						</article>
 
@@ -58,22 +83,22 @@
 							<span class="image main">
 								<img src="images/wall1.jpg">
 							</span>
-							<p>Woah! What is this place? Where will it lead?</p>
-							<p>Umm.. There are some writings on the wall. but what do they want to tell me?</p>
-							<p>click the dots <b><a href="#scene3">...</a></b></p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">-Horrifying!! The door closed saying no exit..Where am I? I'm scared. But I have to end what I've started.</p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="6000" data-typecadence-caret="false">-Umm... Something's scripted on the walls! Do they mean something? Let's move ahead. [--click the dots--]</p>
+							<p><b><a href="#scene3" onclick="playClickSound2()">...</a></b></p>
 						</article>
 
 						<article id="scene3">
 							<h2 class="major">Portal?</h2>
 							<span class="image main">
-								<a href="#scene4"><img src="images/portal.jpg"></a>
+								<a href="#scene4"><img src="images/portal.jpg" onclick="playClickSound2()"></a>
 							</span>
 							
-							<p>End of the path? Oh, it says Portal 00.</p>
-							<p>Ouch!! Why am I being pushed out everytime I try to go through it?</p>
-							<p>Ah! There is a tablet. It needs a portal key and has some numbers in a series of boxes.</p>
-							<p>Where do I supposed to find the Key?</p>
-							<p>Click the dash <a href="#scene4"><b>____</b></a></p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">-End of the path? Oh, it says Portal 00.</p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="4000" data-typecadence-caret="false">-Why can't I pass through, nothing seems to here. Hey!! anyone?? Hello why can't I go through?</p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="8000" data-typecadence-caret="false">-Ah! There is a tablet. It needs a portal key and has some numbers in a series of boxes.</p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="13000" data-typecadence-caret="false">-Where do I supposed to find the Key? and what are the numbers indicating me? Oh, I'm overwhelmed! [--Click the dash--]</p>
+							<p><a href="#scene4" onclick="playClickSound2()"><b>____</b></a></p>
 							
 						</article>
 
@@ -83,9 +108,9 @@
 								<img src="images/wall2.jpg">
 							</span>
 							
-							<p>Ooo... The words written on the walls.</p>
-							<p>I guess, It can help me to find the key.</p>
-							<p>Clik the number <a href="#stage-1"><b>0110</b></a></p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">(Looks Behind)-Woah!</p>
+							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="3000" data-typecadence-caret="false">Something is appearing on the walls. The words.....it is...[--Click the number--]</p>
+							<p><a href="#stage-1" onclick="playClickSound2()"><b>0110</b></a></p>
 						</article>
 						
 
@@ -94,26 +119,19 @@
 								<h2 class="major">Wired Mind</h2>
 								<p>Following are the hints to understand the words written on the walls. You can use the hint from the words you got in here to get the portal key.</p>
 								<p>You will get a sentence after you find all the words which will help you to get the hint.</p><hr>
-                  <p>1. A temperature that is below room temperature.(consists of 4 letters)<br><br>
-2.Second person form of the verb "to be".(consists of 3 letters)<br><br>
-3.A definite article used to specify a particular object.(consists of 3 letters)<br><br>
-4.The organ that carries blood (plural form)(consists of 6 letters)
-<br><br>5.Used to introduce a restrictive clause.(consists of 4 letters)<br><br>
-6.Possesses knowledge or is aware of something.(consists of 5 letters)<br><br>
-7.A negative response or denial.(consists of 2 letters)<br><br>
-8.The act of being gentle, considerate, and helpful.(consists of 8 letters)<br><br>
-9.A definite article used to specify a particular object.(consists of 3 letters)<br><br>
-10.Coming after the second in a series of items.(consists of 5 letters)<br><br>
-11.A unit of language that carries meaning.(consists of 4 letters)<br><br>
-13.A definite article used to specify a particular object.(consists of 3 letters)<br><br>
-14.Used to introduce a restrictive clause.(consists of 4 letters)<br><br>
-15.To transfer possession or present something to someone.(consists of 4 letters)<br><br>
-16.Refering to the person or people being spoken or written to.(consists of 3 letters)<br><br>
-17.A definite article used to specify a particular object.(consists of 3 letters)<br><br>
-18.Mental or emotional strain caused by demanding circumstances.(consists of 6 letters)
+                  <p><b>1.</b>-"The letter of the english alphabet, it stands tall and straight."<br><br>
+					<b>2.</b>-"A two-letter verb that represents existence in the present."<br><br>
+					<b>3.</b>-"Unable to move or escape, like a car in deep mud."<br><br>
+					<b>4.</b>-"A preposition indicating location or inclusion within something."<br><br>
+					<b>5.</b>-"A definite article used to specify a particular person or thing."<br><br>
+					<b>6.</b>-"The ordinal number that follows second and precedes fourth, often associated with bronze in a competition."<br><br>
+					<b>7.</b>-"A unit of language that carries meaning and can be spoken or written."<br><br>
+					<b>8.</b>-"A preposition indicating possession, origin, or relationship."<br><br>
+					<b>9.</b>-"Mysterious and unfamiliar, like a hidden treasure waiting to be discovered."<br><br>
+					<b>10.</b>-"To create or produce something, often with one's own hands or mind."
 </p><hr>
 									<ul class="actions">
-										<li><a href="#portal" class="button small">Next</a></li>
+										<li><a href="#portal" class="button small" onclick="playClickSound()">Next</a></li>
 									</ul>
 
 							</article>
@@ -121,36 +139,44 @@
 						<!-- About -->
 							<article id="portal">
 								<h2 class="major">Portal 00</h2>
-								<p>Tip: Each 4 digit number represents a word. After you get the answer from the previous section, find the requird word and put it in the Portal Key section.</p>
-								<p>Main : 3024 5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130  0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110 2624 3136 3110 4280 3333 0310 0910</p>
+								<p>Tip: Each <b>4 digit number</b> represents a word. After you get the answer from the previous section, find the requird word and put it in the Portal Key section.</p>
+								<p>Main :5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130  0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110 2624 3136 3110 4280 3333 0310 0910</p>
 								
 								<p>Secondary :0310 0190 1116 6110 1110 5110 0990 0830 3024 5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110</p>
 								
 								<p>Unknown :5342 6231 3024 5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110 3024 5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130 2624</p>
 								<ul class="actions">
-								  <li><a href="#server" class="button small">Next</a></li>
-									<li><a href="#stage-1" class="button small">Back</a></li>
+								  <li><a href="#server2" class="button small" onclick="playClickSound()">Next</a></li>
+									<li><a href="#stage-1" class="button small" onclick="playClickSound()">Back</a></li>
 								</ul>
 							</article>
 
-							<article id="server">
+							<article id="server2">
 								<h2 class="major">Portal Key</h2>
 								<section>
 		
-									<form id="myForm">
+									<form id="myForm2">
 										<div class="fields">
 											<div class="field">
 												<label for="code">Enter key-</label>
-												<input type="text" id="code" name="code">
+												<input type="text" id="code2" name="code" onclick="playClickSound()">
 											</div>
 			
 											
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Submit" class="button small" /></li>
+											<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
 										</ul>
 									</form>
 								</section>
+							</article>
+
+							<article id="progress">
+								<h2 class="major">Congrats!</h2>
+								<p>You've made it to the Stage 2 of the game. Complete and submit the below form <b>before Continuing</b> to the next stage. Other-wise <b>you'll lose your progress</b> in stage 1.</p>
+								<ul class="actions">
+									<li><a href="Stage2.html" class="button small" onclick="playClickSound()">Continue</a></li>
+								</ul>
 							</article>
 
 					</div>
@@ -167,26 +193,91 @@
 
 		<!-- Scripts -->
 			<script>
-				document.getElementById("myForm").addEventListener("submit", validateForm);
+				document.getElementById("myForm2").addEventListener("submit", validateForm);
 			  
 				function validateForm(event) {
 				  event.preventDefault(); // Prevent form submission
 			  
 				  // Get the entered code
-				  var enteredCode = document.getElementById("code").value;
+				  var enteredCode = document.getElementById("code2").value;
 			  
 				  // Compare the entered code with the stored code
 				  var storedCode = "3024"; // Replace with your actual stored code
 			  
 				  if (enteredCode === storedCode) {
 					// Code is valid, redirect to the desired page
-					window.location.href = "Stage2.html"; // Replace with your actual page URL
+					window.location.href = "#progress"; // Replace with your actual page URL
 				  } else {
 					// Code is invalid, display an error message
 					alert("Invalid Access Code. Please try again.");
 				  }
 				}
 			  </script>
+
+<script>
+	document.getElementById("myForm").addEventListener("submit", validateForm);
+  
+	function validateForm(event) {
+	  event.preventDefault(); // Prevent form submission
+  
+	  // Get the entered code
+	  var enteredCode = document.getElementById("code").value;
+  
+	  // Compare the entered code with the stored code
+	  var storedCode = "ftp010"; // Replace with your actual stored code
+  
+	  if (enteredCode === storedCode) {
+		// Code is valid, redirect to the desired page
+		window.location.href = "#scene1"; // Replace with your actual page URL
+	  } else {
+		// Code is invalid, display an error message
+		alert("Invalid Access Code. Please try again.");
+	  }
+	}
+  </script>
+
+<script>
+	function playClickSound() {
+var clickSound = document.getElementById("clickSound");
+clickSound.play();
+}
+
+  </script>
+  <script>
+	function playClickSound2() {
+var clickSound = document.getElementById("clickSound2");
+clickSound.play();
+}
+
+  </script>
+  <script>
+	function playClickSound3() {
+var clickSound = document.getElementById("clickSound3");
+clickSound.play();
+
+}
+
+  </script>
+  <script>
+	const button = document.querySelector("#button1");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+if (audio.paused) {
+audio.volume = 0.2;
+audio.play();
+icon.classList.remove('fa-volume-up');
+icon.classList.add('fa-volume-mute');
+
+} else {
+audio.pause();
+icon.classList.remove('fa-volume-mute');
+icon.classList.add('fa-volume-up');
+}
+button.classList.add("fade");
+});
+</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
