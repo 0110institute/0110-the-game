@@ -16,13 +16,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			
-		</style>
+		
 	</head>
 	<body class="is-preload">
 
+		
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -40,7 +43,7 @@
 								<audio id="clickSound" src="click.mp3"></audio>
 								<audio id="clickSound2" src="click2.mp3"></audio>
 								<li><a href="#intro" onclick="playClickSound()">Enter</a></li>
-								<li><a href="#work" onclick="playClickSound()">HowToPlay</a></li>
+								<li><a href="#elements" onclick="playClickSound()">HowToPlay</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -50,10 +53,13 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">The Deluted Realm</h2>
-								<span class="image main">
-									<a href="#intro3" onclick="playClickSound2()"><img src="images/Intro.jpg"></a>
-								</span>
+								<h2 class="major"><..> -Wait: 10 sec</h2>
+								<p class="typecadence" data-typecadence-speed="20,30" data-typecadence-mistakes="10" data-typecadence-caret="false">Program 047. Welcome back..</p>
+								<p class="typecadence" data-typecadence-speed="20,30" data-typecadence-mistakes="10" data-typecadence-caret="false" data-typecadence-delay="5000">I'm your base code and got initialized due to a reboot. I've to check your memory record for initalizing the 'main.init', so you can retrieve your state.</p>
+								<ul class="actions" >
+									<li><a href="#intro3" class="button"  onclick="playClickSound()" onclick="handleClick()">Proceed</a></li>
+									<span id="countdown"></span>
+								</ul>
 							</article>
 
 							<article id="intro3">
@@ -158,6 +164,38 @@
 }
 
 		  </script>
+		<script>
+		 function handleClick() {
+  const button = document.querySelector('.button');
+  const countdownElement = document.getElementById('countdown');
+  
+  if (!button.classList.contains('disabled')) {
+    button.classList.add('disabled'); // Disable the button after it's clicked
+
+    const countdownTime = 5; // 5 seconds
+    let timeLeft = countdownTime;
+
+    countdownElement.innerText = `Countdown: ${timeLeft} seconds`;
+
+    const countdownInterval = setInterval(() => {
+      timeLeft--;
+
+      // Update the countdown text
+      countdownElement.innerText = `Countdown: ${timeLeft} seconds`;
+
+      // Check if the countdown has reached 0
+      if (timeLeft <= 0) {
+        clearInterval(countdownInterval); // Stop the countdown
+        countdownElement.innerText = ''; // Clear the countdown text
+        button.classList.remove('disabled'); // Enable the button
+        // Perform the desired task here
+        // Call a function or execute the desired code
+      }
+    }, 1000); // Update the countdown every 1 second (1000 milliseconds)
+  }
+}
+
+		</script>
 		  
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
