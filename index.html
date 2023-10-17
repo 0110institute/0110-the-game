@@ -24,6 +24,8 @@
 		
 	</head>
 	<body class="is-preload">
+		
+		<audio id="opening-music"></audio>
 
 		
 		<!-- Wrapper -->
@@ -164,38 +166,29 @@
 }
 
 		  </script>
-		<script>
-		 function handleClick() {
-  const button = document.querySelector('.button');
-  const countdownElement = document.getElementById('countdown');
-  
-  if (!button.classList.contains('disabled')) {
-    button.classList.add('disabled'); // Disable the button after it's clicked
+		
+		 <script>
+		    const bgContainer = document.querySelector('#bg');
 
-    const countdownTime = 5; // 5 seconds
-    let timeLeft = countdownTime;
+const video = document.createElement('video');
+video.src = 'vid2.mp4';
+video.autoplay = true;
+video.loop = true;
+video.muted = true;
 
-    countdownElement.innerText = `Countdown: ${timeLeft} seconds`;
+bgContainer.appendChild(video);
 
-    const countdownInterval = setInterval(() => {
-      timeLeft--;
 
-      // Update the countdown text
-      countdownElement.innerText = `Countdown: ${timeLeft} seconds`;
+		  </script>
+		  <script>
+		    window.addEventListener('load', () => {
+  const audio = new Audio();
+  audio.src = 'on2.wav';
+  audio.play();
+});
 
-      // Check if the countdown has reached 0
-      if (timeLeft <= 0) {
-        clearInterval(countdownInterval); // Stop the countdown
-        countdownElement.innerText = ''; // Clear the countdown text
-        button.classList.remove('disabled'); // Enable the button
-        // Perform the desired task here
-        // Call a function or execute the desired code
-      }
-    }, 1000); // Update the countdown every 1 second (1000 milliseconds)
-  }
-}
+		  </script>
 
-		</script>
 		  
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
