@@ -476,6 +476,27 @@ button.addEventListener("click", () => {
 				  }
 				}
 			  </script>
+			  <script>
+				const bgContainer = document.querySelector('#bg');
+	
+	const video = document.createElement('video');
+	video.src = 'vid2.mp4';
+	video.autoplay = true;
+	video.loop = true;
+	video.muted = true;
+	
+	bgContainer.appendChild(video);
+	
+	
+			  </script>
+			  <script>
+				window.addEventListener('load', () => {
+	  const audio = new Audio();
+	  audio.src = 'on2.wav';
+	  audio.play();
+	});
+	
+			  </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>

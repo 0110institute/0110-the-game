@@ -1115,7 +1115,7 @@ input, select, textarea {
 	z-index: -1;
 	overflow: hidden;
 	opacity: 0; /* Set initial opacity to 0 */
-	animation: fadeIn 3s forwards; /* Add fade-in animation */
+	animation: fadeIn 5s forwards; /* Add fade-in animation */
   }
   
   @keyframes fadeIn {
@@ -1134,8 +1134,8 @@ input, select, textarea {
 	width: 100vw;
 	height: 100vh;
 	object-fit: fill;
-	filter: blur(1px);
-	animation: slowMotion 10s infinite linear;
+	filter: blur(0px);
+	animation: slowMotion 12s infinite linear;
   }
   
   
