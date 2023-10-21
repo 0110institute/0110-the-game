@@ -941,7 +941,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #ffffff;
+			border: solid 1px #73c2fb;
 			border-left: 0;
 			border-right: 0;
 		}
@@ -955,7 +955,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: #73c2fb;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -963,11 +963,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #ffffff;
+			border-bottom: solid 2px #73c2fb;
 		}
 
 		table tfoot {
-			border-top: solid 2px #ffffff;
+			border-top: solid 2px #73c2fb;
 		}
 
 		table.alt {
@@ -975,7 +975,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #ffffff;
+				border: solid 1px #73c2fb;
 				border-left-width: 0;
 				border-top-width: 0;
 			}
