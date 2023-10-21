@@ -1134,7 +1134,7 @@ input, select, textarea {
 	width: 100vw;
 	height: 100vh;
 	object-fit: fill;
-	filter: blur(0px);
+	filter: blur(3px);
 	animation: slowMotion 12s infinite linear;
   }
   
