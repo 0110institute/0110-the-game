@@ -75,15 +75,15 @@
 							<p>A glass container has a digital note but it needs a code to open. The Room became darker as I was thinking about the code</p>
 							<p>There is somethinbg appearing on the walls, I see.</p>
 							<ul class="actions">
-							  <li><a href="#obj" class="button small" onclick="playClickSound()">proceed</a></li>
+							  <li><a href="#one" class="button small" onclick="playClickSound()">proceed</a></li>
 							</ul>
 						</article>
 
 						
 
 						<article id="one">
-							<h2 class="major">The code</h2>
-							<p>Solve the below puzzle to get the code and enter it into the given box.</p><hr>
+							<h2 class="major"><..></h2>
+							<h3>Puzzle 004- The Calculations I</h3>
 							<p><b>1.</b>If The hour hand of a clock starting from 12 rounds back to the same position again and again. How many days it will need to cover its rotation of 41 times. [Take integer value]</p>
 							<p><b>2.</b>The preceding year of the second leap year of 21st century, that is to be subtracted from the 12th consecutive year of the current year. </p>
 							<p>You will get 4 digit number, 2 from each solution. Put that in the below box.</p>
@@ -105,13 +105,38 @@
 								</section>
 
 						</article>
+						<article id="one2">
+							<h2 class="major"><..></h2>
+							<h3>Puzzle 005- The Calculations II</h3>
+							<p><b>1.</b>Make the number '0110' as a quantity of 0 and 1 respectively, and get the year which is the next year after the US Election Year.  </p>
+							<p><b>2.</b>Convert the word 'chronomaze' into the alphabetical order of each letter and find its sum. </p>
+							<p>Add answer of 1 and 2 and get a 4 digit number</p>
+								<section>
+	
+									<form id="myForm4">
+										<div class="fields">
+											<div class="field">
+												<label for="code"></label>
+												<input type="text" id="code4" name="code" onclick="playClickSound()">
+											</div>
+			
+											
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Open" class="button small" onclick="playClickSound()"/></li>
+										</ul>
+									</form>
+								</section>
+
+						</article>
 
 						
 
 						<!-- Work -->
-							<article id="stage-2">
+							<article id="scene">
 								<h2 class="major">The note</h2>
-								<p>'moFr eht nwonknu, eht repeek fo eht ezam. yM ytitnedi si sa ekaf sa siht elddir tielfs. ehT rekees ohw tog siht eton dlouhs daer eht eman fo eht emag, eht eltit rebmun si eht yek ot eht netx egats.'</p><hr>
+								<h3>Puzzle 006- Undefined</h3>
+								<p>'moFr eht nwonknu, eht repeek fo eht ezam. yM ytitnedi si sa ekaf sa siht elddir tielfs. ehT rekees ohw tog siht eton dlouhs daer eht eman fo eht emag, eht eltit rebmun si eht yek ot eht netx egats.'</p>
 								<p><b>Hint:</b> Be mindful about the words that makes the most sense and it will lead to the next stage. Goodluck!</p>
 									<ul class="actions">
 										<li><a href="#server2" class="button small" onclick="playClickSound()">Next</a></li>
@@ -121,13 +146,13 @@
 
 
 							<article id="server2">
-								<h2 class="major">Portal Key</h2>
+								<h2 class="major">Stage 3-Locked</h2>
 								<section>
 		
 									<form id="myForm2">
 										<div class="fields">
 											<div class="field">
-												<label for="code">Enter key-</label>
+												<label for="code">Enter key to unlock</label>
 												<input type="text" id="code2" name="code" onclick="playClickSound()">
 											</div>
 			
@@ -219,7 +244,28 @@
 		  
 			  if (enteredCode === storedCode) {
 				// Code is valid, redirect to the desired page
-				window.location.href = "#scene4"; // Replace with your actual page URL
+				window.location.href = "#one2"; // Replace with your actual page URL
+			  } else {
+				// Code is invalid, display an error message
+				alert("Invalid Access Code. Please try again.");
+			  }
+			}
+		  </script>
+		  <script>
+			document.getElementById("myForm4").addEventListener("submit", validateForm);
+		  
+			function validateForm(event) {
+			  event.preventDefault(); // Prevent form submission
+		  
+			  // Get the entered code
+			  var enteredCode = document.getElementById("code4").value;
+		  
+			  // Compare the entered code with the stored code
+			  var storedCode = "2139"; // Replace with your actual stored code
+		  
+			  if (enteredCode === storedCode) {
+				// Code is valid, redirect to the desired page
+				window.location.href = "#scene"; // Replace with your actual page URL
 			  } else {
 				// Code is invalid, display an error message
 				alert("Invalid Access Code. Please try again.");
