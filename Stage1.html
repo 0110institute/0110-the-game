@@ -72,54 +72,31 @@
 							</section>
 						</article>
 
-						<article id="scene1">
-							<h2 class="major">Entrance</h2>
-							<span class="image main">
-								<a href="#scene2"><img src="images/Gate.jpg" onclick="playClickSound2()"></a>
-							</span>
+						<article id="obj">
+							<h2 class="major">Objective</h2>
+							
+							<ul class="actions">
+							  <li><a href="#stage-1" class="button small" onclick="playClickSound()">Next</a></li>
+							</ul>
 						</article>
 
-						<article id="scene2">
-							<h2 class="major">Confused</h2>
-							<span class="image main">
-								<img src="images/wall1.jpg">
-							</span>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">-Horrifying!! The door closed saying no exit..Where am I? I'm scared. But I have to end what I've started.</p>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="6000" data-typecadence-caret="false">-Umm... Something's scripted on the walls! Do they mean something? Let's move ahead. [--click the dots--]</p>
-							<p><b><a href="#scene3" onclick="playClickSound2()">...</a></b></p>
-						</article>
-
-						<article id="scene3">
-							<h2 class="major">Portal?</h2>
-							<span class="image main">
-								<a href="#scene4"><img src="images/portal.jpg" onclick="playClickSound2()"></a>
-							</span>
-							
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">-End of the path? Oh, it says Portal 00.</p>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="4000" data-typecadence-caret="false">-Why can't I pass through, nothing seems to here. Hey!! anyone?? Hello why can't I go through?</p>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="8000" data-typecadence-caret="false">-Ah! There is a tablet. It needs a portal key and has some numbers in a series of boxes.</p>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="13000" data-typecadence-caret="false">-Where do I supposed to find the Key? and what are the numbers indicating me? Oh, I'm overwhelmed! [--Click the dash--]</p>
-							<p><a href="#scene4" onclick="playClickSound2()"><b>____</b></a></p>
-							
-						</article>
-
-						<article id="scene4">
-							<h2 class="major">The way out</h2>
-							<span class="image main">
-								<img src="images/wall2.jpg">
-							</span>
-							
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-caret="false">(Looks Behind)-Woah!</p>
-							<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="5" data-typecadence-delay="3000" data-typecadence-caret="false">Something is appearing on the walls. The words.....it is...[--Click the number--]</p>
-							<p><a href="#stage-1" onclick="playClickSound2()"><b>0110</b></a></p>
-						</article>
+						
 						
 
 
 							<article id="stage-1">
 								<h2 class="major">Wired Mind</h2>
-								<p>Following are the hints to understand the words written on the walls. You can use the hint from the words you got in here to get the portal key.</p>
-								<p>You will get a sentence after you find all the words which will help you to get the hint.</p><hr>
+								<h3>Puzzle 001</h3>
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field">
+												<label for="demo-message">Type your words to form the sentence</label>
+												<textarea name="demo-message" id="demo-message" placeholder="This box is just for your convenience. The sentence itself is another puzzle. Puzzle 002" rows="6"></textarea>
+											</div>
+										</div>
+									</form>
+								</section>
                   <p><b>1.</b>-"The letter of the english alphabet, it stands tall and straight."<br><br>
 					<b>2.</b>-"A two-letter verb that represents existence in the present."<br><br>
 					<b>3.</b>-"Unable to move or escape, like a car in deep mud."<br><br>
@@ -139,8 +116,9 @@
 
 						<!-- About -->
 							<article id="portal">
-								<h2 class="major">Portal 00</h2>
-								<p>Tip: Each <b>4 digit number</b> represents a word. After you get the answer from the previous section, find the requird word and put it in the Portal Key section.</p>
+								<h2 class="major">Wired Mind</h2>
+								<h3>Puzzle 003</h3>
+								<p>Note: Each <b>4 digit number</b> represents a word. After you get the answer from the previous section, find the requird word and put it in the Portal Key section.</p>
 								<p>Main :5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130  0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110 2624 3136 3110 4280 3333 0310 0910</p>
 								
 								<p>Secondary :0310 0190 1116 6110 1110 5110 0990 0830 3024 5110 8810 2222 0310 0190 1116 6110 1110 5110 0990 0830 0130 2624 3136 3110 4280 3333 0310 0910 0130 2624 3136 3110 4280 3333 0310 0910 7116 0110</p>
@@ -153,13 +131,13 @@
 							</article>
 
 							<article id="server2">
-								<h2 class="major">Portal Key</h2>
+								<h2 class="major">Stage 2 Lockeed</h2>
 								<section>
 		
 									<form id="myForm2">
 										<div class="fields">
 											<div class="field">
-												<label for="code">Enter key-</label>
+												<label for="code">Enter key to unlock-</label>
 												<input type="text" id="code2" name="code" onclick="playClickSound()">
 											</div>
 			
@@ -229,7 +207,7 @@
   
 	  if (enteredCode === storedCode) {
 		// Code is valid, redirect to the desired page
-		window.location.href = "#scene1"; // Replace with your actual page URL
+		window.location.href = "#obj"; // Replace with your actual page URL
 	  } else {
 		// Code is invalid, display an error message
 		alert("Invalid Access Code. Please try again.");

@@ -140,7 +140,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #73c2fb;
+		color: #ffffff;
 		font-family: 'Inconsolata', monospace;
 		font-weight: 300;
 		font-size: 1rem;
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #73c2fb;
+		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -189,7 +189,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #73c2fb;
+			border-bottom: solid 1px #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -199,7 +199,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 6.25rem;
+		font-size: 5.625rem;
 		line-height: 1.3;
 		letter-spacing: 0.5rem;
 	}
@@ -284,7 +284,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #73c2fb;
+		border-bottom: solid 1px #ffffff;
 		margin: 2.75rem 0;
 	}
 
@@ -375,7 +375,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #73c2fb;
+		color: #ffffff;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -401,7 +401,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #73c2fb;
+		border: solid 1px #ffffff;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -426,7 +426,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			background: rgba(255, 255, 255, 0.075);
-			border-color: #73c2fb;
+			border-color: #ffffff;
 			box-shadow: 0 0 0 1px #1e1e1e;
 		}
 
@@ -1015,7 +1015,7 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px #73c2fb;
-		color: #73c2fb !important;
+		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -1116,6 +1116,7 @@ input, select, textarea {
 	overflow: hidden;
 	opacity: 0; /* Set initial opacity to 0 */
 	animation: fadeIn 5s forwards; /* Add fade-in animation */
+	
   }
   
   @keyframes fadeIn {
@@ -1134,7 +1135,7 @@ input, select, textarea {
 	width: 100vw;
 	height: 100vh;
 	object-fit: fill;
-	filter: blur(3px);
+	filter: blur(0px);
 	animation: slowMotion 12s infinite linear;
   }
   
@@ -1514,7 +1515,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(3, 23, 34, 0.85);
+			background-color: rgba(14, 26, 36, 0.87);
 			border-radius: 4px;
 			opacity: 0;
 		}
