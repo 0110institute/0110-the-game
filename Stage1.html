@@ -39,6 +39,7 @@
 							<ul>
 								<audio id="clickSound" src="click.mp3"></audio>
 								<audio id="clickSound2" src="click2.mp3"></audio>
+								<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
 								<li><a href="#server" id="button" onclick="playClickSound()">Enter</a></li>
 								<audio id="clickSound3" src="solve.mp3" type="audio/mpeg" loop></audio>
 								<li><a href="#" id="button" onclick="playClickSound3()">Music</a></li>
@@ -192,7 +193,7 @@
 											
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+											<li><input type="submit" value="Submit" class="button small" onclick="playClickSound4()"/></li>
 										</ul>
 									</form>
 								</section>
@@ -301,6 +302,14 @@ clickSound.play();
   <script>
 	function playClickSound3() {
 var clickSound = document.getElementById("clickSound3");
+clickSound.play();
+
+}
+
+  </script>
+  <script>
+	function playClickSound4() {
+var clickSound = document.getElementById("clickSound4");
 clickSound.play();
 
 }
