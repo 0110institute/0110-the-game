@@ -78,8 +78,9 @@
 
 							<article id="intro">
 								<h2 class="major"><..></h2>
+								<audio id="clickSound4" src="intro.mp3" type="audio/mpeg"></audio>
 								<ul class="actions" >
-									<li><a class="button small" onclick="playClickSound()">The Voice Guide</a></li>
+									<li><a class="button small" onclick="playClickSound4()">The Voice Guide</a></li>
 									<li><p style="font-size: 15;"><<- Play audio</p></li>
 								</ul>
 								<p>Welcome seeker. This is the Chronomatic Realm, your future.<br><br>
@@ -285,6 +286,13 @@
 		  <script>
 			function playClickSound2() {
   var clickSound = document.getElementById("clickSound2");
+  clickSound.play();
+}
+
+		  </script>
+		  <script>
+			function playClickSound4() {
+  var clickSound = document.getElementById("clickSound4");
   clickSound.play();
 }
 
