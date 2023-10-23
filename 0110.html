@@ -26,6 +26,9 @@
 								<h1>0110</h1>
 								<h2>ChronoMaze</h2>
 								<h3>Road to Unknown</h3>
+								<audio id="clickSound" src="click.mp3"></audio>
+								<audio id="clickSound2" src="click2.mp3"></audio>
+								<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
 								<audio src="sneak.mp3" type="audio/mpeg" loop></audio>
 								<h3>Stage 3</h3>
 								<h3>Mind Draining</h3>
@@ -34,7 +37,7 @@
 						<nav>
 					  	<audio src="sneak.mp3" type="audio/mpeg" loop></audio>
 							<ul>
-								<li><a href="#stage-2" id="button">Enter</a></li>
+								<li><a href="#story" id="button">Enter</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -43,39 +46,88 @@
 					<div id="main">
 
 						<!-- Work -->
-							<article id="stage-2">
-								<h2 class="major">Drained</h2>
-								<p>The stage 3 has gone through some changes. It takes your time more than the actual puzzle. You've to carefully look for the right puzzle that can lead to next stage for saving time.</p>
-									<ul class="actions">
+						<article id="story">
+							<h2 class="major"><..></h2>
+							<h3>Backstory</h3>
+							<p>i'm so shocked to see how the stages are placed. However, being able to enter stage 3 it has rebuilt my confidence. But the mpore I proceed further, the more weird the maze appears.</p>
+							<p>Stage 3 seems more complex as there's nothing except images that makes no sense to me.</p>
+							<ul class="actions">
+							  <li><a href="#obj" class="button small" onclick="playClickSound()">proceed</a></li>
+							</ul>
+						</article>
 
-										<li><a href="#puzzle" class="button small">Continue</a></li>
-
-									</ul>
-							</article>
+						<article id="obj">
+							<h2 class="major">Objective</h2>
+							<h3>Read it carefully</h3>
+							<ol>
+								<li>Observe the poem carefully and try to understand what it wants.</li>
+								<li>The answer lies within the given images. See how can you get it.</li>
+								<li>The only hint available will be in the title. Think about it.</li>
+								<li>After you get the required things from the images, work according to the poem.</li>
+							</ol>
+							<h4>Goodluck!!</h4>
+							<ul class="actions">
+							  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Next</a></li>
+							</ul>
+						</article>
 							
 							<article id="puzzle">
-								<h2 class="major">Mind Draining</h2>
+								<h2 class="major">(*.png)</h2>
+								<h3>Puzzle 007- Words From a poet</h3>
 								<p>"The letters which needs the sum,<br>
 								of which the words of it can make you feel dump.<br>
 								Each word can give you a number,<br>
 								Together they help you to be the climber.</p>
-								<p>For solving the puzzle, you have the following three options. Choose wisely and don't waste your time solving the wrong.<br><br>
-								Option A- has something that can make you scratch you head.<br>
-								Option B- has some Operation to find the imposter<br>
-								Option C- Its hard to understand. What does it want?</p>
-						      <ul class="actions">
-										<li><a href="#A" class="button small">A</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#B" class="button small">B</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#C" class="button small">C</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#server" class="button small">Next</a></li>
-									</ul>
-
+								<ul class="actions">
+									<li><a href="#img" class="button small" onclick="playClickSound()">Next</a></li>
+								</ul><hr>
+								<h3>Puzzle 009- Delusional statement</h3>
+<section>
+	<form method="post" id="myForm4">
+		<div class="fields">
+			<div class="field">
+				<label for="demo-message">Type your answer from the images.(Its a sentence)</label>
+				<textarea name="demo-message" id="code4" name="code" onclick="playClickSound()" id="demo-message" placeholder="" rows="6"></textarea>
+			</div>
+		</div>
+		<ul class="actions">
+			<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+		</ul>
+	</form>
+</section>
+							</article>
+							<article id="img">
+								<h2 class="major">Images</h2>
+								<h3>Seek the answer which lies in the images.</h3>
+								<h4>Goodluck!!</h4><hr>
+								<h3>Puzzle 008- The Truth behind Visuals</h3>
+								<span class="image main">
+									<img src="images/I.png">
+								</span>
+								<span class="image main">
+									<img src="images/think.png">
+								</span>
+								<span class="image main">
+									<img src="images/you.png">
+								</span>
+								<span class="image main">
+									<img src="images/are.png">
+								</span>
+								<span class="image main">
+									<img src="images/in.png">
+								</span>
+								<span class="image main">
+									<img src="images/the.png">
+								</span>
+								<span class="image main">
+									<img src="images/wrong.png">
+								</span>
+								<span class="image main">
+									<img src="images/puzzle.png">
+								</span>
+								<ul class="actions">
+								  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Back</a></li>
+								</ul>
 							</article>
 
 
@@ -88,14 +140,13 @@
 										<div class="fields">
 											<div class="field">
 												<label for="code">Enter key-</label>
-												<input type="text" id="code" name="code">
+												<input type="text" id="code" name="code" onclick="playClickSound()">
 											</div>
 				
 												
 										</div>
 											<ul class="actions">
-												<li><input type="submit" value="Submit" class="button small" /></li>
-												<li><input type="reset" value="Try again" class="button small" /></li>
+												<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
 											</ul>
 									</form>
 								</section>
@@ -475,6 +526,36 @@ button.addEventListener("click", () => {
 					alert("Invalid Access Code. Please try again.");
 				  }
 				}
+			  </script>
+			  <script>
+				function playClickSound() {
+			var clickSound = document.getElementById("clickSound");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound2() {
+			var clickSound = document.getElementById("clickSound2");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound3() {
+			var clickSound = document.getElementById("clickSound3");
+			clickSound.play();
+			
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound4() {
+			var clickSound = document.getElementById("clickSound4");
+			clickSound.play();
+			
+			}
+			
 			  </script>
 			  <script>
 				const bgContainer = document.querySelector('#bg');
