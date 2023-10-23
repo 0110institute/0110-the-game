@@ -29,7 +29,7 @@
 								<audio id="clickSound" src="click.mp3"></audio>
 								<audio id="clickSound2" src="click2.mp3"></audio>
 								<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
-								<audio src="sneak.mp3" type="audio/mpeg" loop></audio>
+								<audio  id="clickSound3" src="sneak.mp3" type="audio/mpeg" loop></audio>
 								<h3>Stage 3</h3>
 								<h3>Mind Draining</h3>
 							</div>
@@ -37,7 +37,8 @@
 						<nav>
 					  	<audio src="sneak.mp3" type="audio/mpeg" loop></audio>
 							<ul>
-								<li><a href="#story" id="button">Enter</a></li>
+								<li><a href="#server" id="button">Enter</a></li>
+								<li><a href="#" id="button" onclick="playClickSound3()">Music</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -46,6 +47,25 @@
 					<div id="main">
 
 						<!-- Work -->
+						<article id="server">
+							<h2 class="major">Stage Code</h2>
+							<section>
+	
+								<form id="myForm5">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Stage Code:</label>
+											<input type="text" id="code5" name="code" onclick="playClickSound()">
+										</div>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+									</ul>
+								</form>
+							</section>
+						</article>
 						<article id="story">
 							<h2 class="major"><..></h2>
 							<h3>Backstory</h3>
@@ -129,18 +149,24 @@
 								  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Back</a></li>
 								</ul>
 							</article>
-							<article id="obj">
-								<h2 class="major">Objective</h2>
-								<h3>Read it carefully</h3>
-								<ol>
-									<li>Observe the poem carefully and try to understand what it wants.</li>
-									<li>The answer lies within the given images. See how can you get it.</li>
-									<li>The only hint available will be in the title. Think about it.</li>
-									<li>After you get the required things from the images, work according to the poem.</li>
-								</ol>
-								<h4>Goodluck!!</h4>
+							<article id="puzzle1">
+								<h2 class="major">Stage 4-Locked</h2>
+								<h3>Puzzle 010- The Sum</h3>
+								<section>
+									<form method="post" id="myForm4">
+										<div class="fields">
+											<div class="field">
+												<label for="demo-message">Now according to the 1st two statement of poem, do what it tells you to do from the below words to get a 8 digit number</label>
+												<textarea name="demo-message" id="code4" name="code" onclick="playClickSound()" id="demo-message" placeholder="I think you are in the wrong puzzle" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+										</ul>
+									</form>
+								</section>
 								<ul class="actions">
-								  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Next</a></li>
+								  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Back</a></li>
 								</ul>
 							</article>
 
@@ -201,6 +227,27 @@ button.addEventListener("click", () => {
 				  if (enteredCode === storedCode) {
 					// Code is valid, redirect to the desired page
 					window.location.href = "15332356.html"; // Replace with your actual page URL
+				  } else {
+					// Code is invalid, display an error message
+					alert("Invalid Access Code. Please try again.");
+				  }
+				}
+			  </script>
+			  <script>
+				document.getElementById("myForm5").addEventListener("submit", validateForm);
+			  
+				function validateForm(event) {
+				  event.preventDefault(); // Prevent form submission
+			  
+				  // Get the entered code
+				  var enteredCode = document.getElementById("code5").value;
+			  
+				  // Compare the entered code with the stored code
+				  var storedCode = "tr404"; // Replace with your actual stored code
+			  
+				  if (enteredCode === storedCode) {
+					// Code is valid, redirect to the desired page
+					window.location.href = "#puzzle"; // Replace with your actual page URL
 				  } else {
 					// Code is invalid, display an error message
 					alert("Invalid Access Code. Please try again.");
