@@ -100,14 +100,17 @@
 								Together they help you to be the climber.</p>
 								<ul class="actions">
 									<li><a href="#img" class="button small" onclick="playClickSound()">Next</a></li>
-								</ul><hr>
+								</ul>
+								<ul class="actions">
+									<li><a href="#obj" class="button small" onclick="playClickSound()">Objective</a></li>
+								</ul><hr><hr>
 								<h3>Puzzle 009- Delusional statement</h3>
 <section>
 	<form method="post" id="myForm4">
 		<div class="fields">
 			<div class="field">
 				<label for="demo-message">Type your answer from the images.(Its a sentence)</label>
-				<textarea name="demo-message" id="code4" name="code" onclick="playClickSound()" id="demo-message" placeholder="" rows="6"></textarea>
+				<textarea name="demo-message" id="code4" name="code" onclick="playClickSound()" id="demo-message" placeholder="Solve Puzzle 008 and get 8 words. Typing the words as it is without changing its capitalization or anything, form the sentence without fullstop. " rows="6"></textarea>
 			</div>
 		</div>
 		<ul class="actions">
@@ -153,11 +156,11 @@
 								<h2 class="major">Stage 4-Locked</h2>
 								<h3>Puzzle 010- The Sum</h3>
 								<section>
-									<form method="post" id="myForm4">
+									<form method="post" id="myForm">
 										<div class="fields">
 											<div class="field">
-												<label for="demo-message">Now according to the 1st two statement of poem, do what it tells you to do from the below words to get a 8 digit number</label>
-												<textarea name="demo-message" id="code4" name="code" onclick="playClickSound()" id="demo-message" placeholder="I think you are in the wrong puzzle" rows="6"></textarea>
+												<label for="demo-message">Now according to the statement of poem, do what it tells you to do from the below words to get a 8 digit number</label>
+												<textarea name="demo-message" id="code" name="code" onclick="playClickSound()" id="demo-message" placeholder="I think you are in the wrong puzzle. [Sum means getting together, not addition. ]" rows="6"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
@@ -169,6 +172,14 @@
 								  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Back</a></li>
 								</ul>
 							</article>
+							<article id="progress">
+								<h2 class="major">Congrats!</h2>
+								<p>You've made it to the Stage 2 of the game. Complete and submit the below form <b>before Continuing</b> to the next stage. Other-wise <b>you'll lose your progress</b> in stage 1.</p>
+								<ul class="actions">
+									<li><a href="15332356.html" class="button small" onclick="playClickSound()">Continue</a></li>
+								</ul>
+							</article>
+
 
 
 							
@@ -226,7 +237,7 @@ button.addEventListener("click", () => {
 			  
 				  if (enteredCode === storedCode) {
 					// Code is valid, redirect to the desired page
-					window.location.href = "15332356.html"; // Replace with your actual page URL
+					window.location.href = "#progress"; // Replace with your actual page URL
 				  } else {
 					// Code is invalid, display an error message
 					alert("Invalid Access Code. Please try again.");
