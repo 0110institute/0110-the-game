@@ -36,9 +36,13 @@
 							</div>
 						</div>
 						<nav>
-						  <audio src="monster.mp3" type="audio/mpeg" loop></audio>
+							<audio id="clickSound" src="click.mp3"></audio>
+							<audio id="clickSound2" src="click2.mp3"></audio>
+						<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
+						  <audio id="clickSound3" src="monster.mp3" type="audio/mpeg" loop></audio>
 							<ul>
-								<li><a href="#stage-5" id="button">Enter</a></li>
+								<li><a href="#server" id="button">Enter</a></li>
+								<li><a href="#" id="button" onclick="playClickSound3()">Music</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -46,306 +50,89 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Work -->
-						<article id="stage-5">
-							<h2 class="major">It's Brained</h2>
-							<p>A five digit number,<br>-The ones place digit is the summation of the game.<br>-The tens place digit is the 5th consecutive number of the ones place's digit<br>
-							-The hundreds place digit is the ones place digit of the summation of the ones and tens place of the original number multiplied by 3<br>
-							-The thousands place is the ones place digit of twice the 3rd prime number.<br>-The ten thousands place is the number which is alone in nature.<br><br>
-							But the original number is the rerverse of the derived number.(The ones place must be taken from the right to get the number)<br>
-							What is the number? </p>
-							<ul class="actions">
-								<li><a href="#portal" class="button small">The Search</a></li>
-							</ul>
-
-						</article>
-
-						<!-- About -->
-							<article id="portal">
-								<h2 class="major">The Search</h2>
-								<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
-								<p>Find the result you got from the below numbers.</p>
-								<p>12947743878095342858473242394872389537874398432890275836184 5485773904073252447254729210482628364846282618260274582546 5459357372826317294674894728373<a href="Stage6.html">27701</a>1112947348347298325 325325238448375303438420910423947235032958
-									032712832702957072595091515402</p>
-							</article>
-
-							<article id="Help">
-								<h2 class="major">0110</h2>
-								<p class="typecadence" data-typecadence-caret="false" data-typecadence-speed="45,90">Try hard and analys the words and clues carefully, make a sentence and proceed to the Portal 0</p>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+						<article id="server">
+							<h2 class="major">Stage Code</h2>
+							<section>
+	
+								<form id="myForm5">
 									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
 										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<label for="code">Stage Code:</label>
+											<input type="text" id="code5" name="code" onclick="playClickSound()">
 										</div>
+		
+										
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+							</section>
+						</article>
+						<article id="story">
+							<h2 class="major"><..></h2>
+							<h3>Backstory</h3>
+							<p>That was a massive escape. the puzzles were so much hard that I thought I'll be locked in that room forever.</p>
+							<p>Thanks to my wit. I managed to escape. But did I complete stage 4 or not?</p>
+							<ul class="actions">
+							  <li><a href="#obj" class="button small" onclick="playClickSound()">proceed</a></li>
+							</ul>
+						</article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+						<article id="obj">
+							<h2 class="major">Objective</h2>
+							<h3>Read it carefully</h3>
+							<ol>
+								<li>The task is simple. Find the number according to the given instrution.</li>
+							</ol>
+							<h4>Goodluck!!</h4>
+							<ul class="actions">
+							  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Next</a></li>
+							</ul>
+						</article>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+						<!-- Work -->
+						<article id="puzzle">
+							<h2 class="major"><..></h2>
+							<h3>Puzzle 016-The Code</h3>
+							<p>A five digit number,<br>-The ones place digit is the summation of the game title number.<br>-The tens place digit is the 5th consecutive number of the ones place's digit<br>
+							-The hundreds place digit is the ones place digit of the summation of the ones and tens place of the original number multiplied by 3<br>
+							-The thousands place is the ones place digit of twice the 3rd prime number.<br>-The ten thousands place is the number which is alone in nature.<br><br>
+							But the original number is the reverse of the derived number.<b><i>(The ones place must be taken from the right to get the number)</i></b><br>
+							What is the number? </p><hr><hr>
+							<h2 class="major">The code</h2>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
+							<section>
+			
+								<form id="myForm2">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Enter number to unlock:</label>
+											<input type="text" id="code2" name="code" onclick="playClickSound()" >
 										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()" /></li>
+										<li><input type="reset" value="Try again" class="button small" onclick="playClickSound()" /></li>
+									</ul>
+								</form>
+							</section>
+							
 
-							</article>
+						</article>
+						<article id="progress">
+							<h2 class="major">Congrats!</h2>
+							<p>You've made it to the Stage 6 of the game. Complete and submit the below form <b>before Continuing</b> to the next stage. Other-wise <b>you'll lose your progress</b> in stage 1.</p>
+							<ul class="actions">
+								<li><a href="Stage6.html" class="button small" onclick="playClickSound()">Continue</a></li>
+							</ul>
+						</article>
+
+					
+
+						
 
 					</div>
 
@@ -380,6 +167,78 @@ button.addEventListener("click", () => {
   button.classList.add("fade");
 });
 			</script>
+			<script>
+				document.getElementById("myForm5").addEventListener("submit", validateForm);
+			  
+				function validateForm(event) {
+				  event.preventDefault(); // Prevent form submission
+			  
+				  // Get the entered code
+				  var enteredCode = document.getElementById("code5").value;
+			  
+				  // Compare the entered code with the stored code
+				  var storedCode = "htp001"; // Replace with your actual stored code
+			  
+				  if (enteredCode === storedCode) {
+					// Code is valid, redirect to the desired page
+					window.location.href = "#story"; // Replace with your actual page URL
+				  } else {
+					// Code is invalid, display an error message
+					alert("Invalid Access Code. Please try again.");
+				  }
+				}
+			  </script>
+			  <script>
+				document.getElementById("myForm2").addEventListener("submit", validateForm);
+			  
+				function validateForm(event) {
+				  event.preventDefault(); // Prevent form submission
+			  
+				  // Get the entered code
+				  var enteredCode = document.getElementById("code2").value;
+			  
+				  // Compare the entered code with the stored code
+				  var storedCode = "27701"; // Replace with your actual stored code
+			  
+				  if (enteredCode === storedCode) {
+					// Code is valid, redirect to the desired page
+					window.location.href = "#progress"; // Replace with your actual page URL
+				  } else {
+					// Code is invalid, display an error message
+					alert("Invalid Access Code. Please try again.");
+				  }
+				}
+			  </script>
+			<script>
+				function playClickSound() {
+			var clickSound = document.getElementById("clickSound");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound2() {
+			var clickSound = document.getElementById("clickSound2");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound3() {
+			var clickSound = document.getElementById("clickSound3");
+			clickSound.play();
+			
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound4() {
+			var clickSound = document.getElementById("clickSound4");
+			clickSound.play();
+			
+			}
+			
+			  </script>
 			<script>
 				const bgContainer = document.querySelector('#bg');
 	
