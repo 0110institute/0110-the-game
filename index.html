@@ -68,7 +68,7 @@
 							<a href="#credits3" onclick="playClickSound()">->>>>></a>	
 						</article>
 						<article id="credits3">
-							<h2 style="text-align: center;">Gaming Atmosphere</h2>
+							<h2 style="text-align: center;">For Gaming Atmosphere</h2>
 							<span class="image main">
 								<img src="images/m123.jpg">
 							</span>
@@ -85,12 +85,17 @@
 								</ul>
 								<p>Welcome seeker. This is the Chronomatic Realm, your future.<br><br>
 								Seems like you want to seek the knowledge of the unknown. To have it, you must go through this maze. I'll be your guide throughout the journey.<br>
-								But before that, Let me mention the rules and erries of this 'ChronoMaze'.</p><br>
-								<a href="#intro1" onclick="playClickSound()" onclick="handleClick()"><b>[OK]</b></a>
+								But before that, Let me mention the rules and erries of this 'ChronoMaze'. (Click OK)</p><br>
+								<p><a href="#intro1" onclick="playClickSound()" onclick="handleClick()"><b>[OK]</b></a></p>
 							</article>
 
 							<article id="intro1">
 								<h2 class="major"><..></h2>
+								<ul class="actions" >
+									<li><a class="button small" onclick="playClickSound5()">The Voice Guide</a></li>
+									<li><p style="font-size: 15;"><<- Play audio</p></li>
+								</ul>
+								<audio id="clickSound5" src="voice2.mp3" type="audio/mpeg"></audio>
 								<h3>Game Rules</h3>
 								<h4>Must read, remember and agree to play the game</h4>
 									<ol>
@@ -129,11 +134,11 @@
 								<h3>Gaming ui/ux:</h3>
 								<h4>Must follow the below rules to get the best gaming experience.</h4>
 									<ol>
-										<li>Aloways use headphones</li>
+										<li>Always use headphones.</li>
 										<li>Click (play music) button at the start of each stage for building the atmosphere.</li>
 										<li>Refresh the page if you dont want the background music.</li>
 										<li>Don't click the empty space outside the displayed cards.</li>
-										<li>Wait and don't click buttons till the instruction is geven to click, when you see a typing message.</li>
+										<li>Wait and don't click buttons till the instruction is given to click, when you see a typing message.</li>
 									</ol>
 								<audio id="clickSound" src="click.mp3"></audio>
 								<ul class="actions" >
@@ -143,8 +148,9 @@
 
 							<article id="intro4">
 								<h2 class="major"><..></h2>
+								<audio id="clickSound6" src="voice1.mp3" type="audio/mpeg"></audio>
 								<h3>Disclaimer/Developer's note</h3>
-									<blockquote>This game is a brainstorming game which questions your brain limit.Solve the puzzles/stages to prove your worth to be the ace. Hope
+									<blockquote>This game is a brainstorming game which questions your brain limit. Solve the puzzles/stages to prove your worth to be the ace. Hope
 										you find this game satisfying. </blockquote>
 										<hr>
 								<h3>Rewards and Points:</h3>
@@ -159,7 +165,7 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>one</td>
+													<td>One</td>
 													<td>Complete registration with payment</td>
 													<td>50pts</td>
 												</tr>
@@ -192,11 +198,11 @@
 										</table>
 									</div>
 								</section>
-								<p><b>Note:</b> The reward system will be done from our end at the end of the game event.</p>
+								
 
 								<audio id="clickSound" src="click.mp3"></audio>
 								<ul class="actions" >
-									<li><a href="#intro5" class="button" onclick="playClickSound()">Continue</a></li>
+									<li><a href="#intro5" class="button" onclick="playClickSound6()">Continue</a></li>
 								</ul>
 							</article>
 							
@@ -293,6 +299,20 @@
 		  <script>
 			function playClickSound4() {
   var clickSound = document.getElementById("clickSound4");
+  clickSound.play();
+}
+
+		  </script>
+		  <script>
+			function playClickSound5() {
+  var clickSound = document.getElementById("clickSound5");
+  clickSound.play();
+}
+
+		  </script>
+		  <script>
+			function playClickSound6() {
+  var clickSound = document.getElementById("clickSound6");
   clickSound.play();
 }
 
