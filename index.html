@@ -15,17 +15,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/visibility.css" />
 		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
+		<style>
+		</style>
 	</head>
 	<body class="is-preload">
 		
 		<audio id="opening-music"></audio>
+		<div id="overlay"></div>
 
 		
 		<!-- Wrapper -->
@@ -58,160 +61,44 @@
 							<span class="image main">
 								<img src="images/cre2.jpg">
 							</span>
-							<a href="#credits2" onclick="playClickSound()">->>>>></a>
+							<p><a id="continueButton" class="hidden" class="button" href="#credits2" onclick="playClickSound()">Next</a></p>
 						</article>
 						<article id="credits2">
 							<h2 style="text-align: center;">Developed by</h2>
 							<span class="image main">
 								<img src="images/cre1.jpg">
 							</span>
-							<a href="#credits3" onclick="playClickSound()">->>>>></a>	
+							<p><a id="continueButton0" class="hidden0" href="#intro0" class="button" onclick="playClickSound()">Next</a>	</p>
 						</article>
-						<article id="credits3">
-							<h2 style="text-align: center;">For Gaming Atmosphere</h2>
-							<span class="image main">
-								<img src="images/m123.jpg">
-							</span>
+						<article id="intro0">
+							<h2 style="text-align: center;">Trailer (Starting Story)</h2>
+							
+								<span class="image main">
+									<video width="100%" height="auto" controls>
+										<source src="video-trailer.mp4" type="video/mp4">
+									  Your browser does not support the video tag.
+									  </video>
+								</span>
+							
 							<audio id="clickSound3" src="audio00.mp3" type="audio/mpeg" loop></audio>
-							<a href="#intro" onclick="playClickSound3()">->>>>></a>	
+							<a id="continueButton1" class="hidden1" href="#intro" class="button" onclick="playClickSound3()">Skip</a>
 						</article>
+						
+							
+						
 
 							<article id="intro">
 								<h2 class="major"><..></h2>
-								<audio id="clickSound4" src="intro.mp3" type="audio/mpeg"></audio>
-								<ul class="actions" >
-									<li><a class="button small" onclick="playClickSound4()">The Voice Guide</a></li>
-									<li><p style="font-size: 15;"><<- Play audio</p></li>
-								</ul>
-								<p>Welcome seeker. This is the Chronomatic Realm, your future.<br><br>
-								Seems like you want to seek the knowledge of the unknown. To have it, you must go through this maze. I'll be your guide throughout the journey.<br>
-								But before that, Let me mention the rules and erries of this 'ChronoMaze'. (Click OK)</p><br>
-								<p><a href="#intro1" onclick="playClickSound()" onclick="handleClick()"><b>[OK]</b></a></p>
+								<p class="typecadence" data-typecadence-speed="5,15" data-typecadence-mistakes="10">Welcome seeker. You've entered into the Chronomatic Realm, your future.<br><br>
+								Seems like you want to seek the knowledge of the unknown. To have it, you must go through this maze. There will be guide throughout the journey.<br>
+								But before that, Let me introduce you to this 'ChronoMaze'. </p>
+								<p><a id="continueButto" class="hidde" href="#server" onclick="playClickSound()" onclick="handleClick()"><b>[Continue]</b></a></p>
 							</article>
-
-							<article id="intro1">
-								<h2 class="major"><..></h2>
-								<ul class="actions" >
-									<li><a class="button small" onclick="playClickSound5()">The Voice Guide</a></li>
-									<li><p style="font-size: 15;"><<- Play audio</p></li>
-								</ul>
-								<audio id="clickSound5" src="voice2.mp3" type="audio/mpeg"></audio>
-								<h3>Game Rules</h3>
-								<h4>Must read, remember and agree to play the game</h4>
-									<ol>
-										<li>Read the <b>backstory</b> of each stage for understanding.</li>
-										<li>Read the <b>objective/instruction</b> to solve the puzzles.</li>
-										<li>Never reveal your <b>solution/answer</b> to any players.</li>
-										<li>Stay <b>anonimous</b> and try to mislead other players.</li>
-										<li>Fill up forms after completion of each stage for <b>record tracking</b>.</li>
-										<li>Don't share your <b>access codes/player info</b> with other players or outsiders.</li>
-									</ol>
-								<audio id="clickSound" src="click.mp3"></audio>
-								<ul class="actions" >
-									<li><a href="#intro2" class="button" onclick="playClickSound()">Continue</a></li>
-								</ul>
-							</article>
-
-							<article id="intro2">
-								<h2 class="major"><..></h2>
-								<h3>Troubleshooting</h3>
-								<h4>Follow the below steps if you encounter any issues regarding game loading.</h4>
-									<ol>
-										<li>Wait for some time (1 or 2 min) for the page to fully load.</li>
-										<li>If you stuck in black screen, try refreshing/reloading.</li>
-										<li>Supported browsers: [updated versions- <b>Brave, Chrome, Samsung Internet, Huawei Browser, Iphone browser.</b></li>
-										<li>Unsupported Browsers: outdated supported browsers, instagram/In-app browsers</li>
-									</ol>
-									<p><b>Note: If you encounter other issues, feel free to contact our socials.</b></p>
-								<audio id="clickSound" src="click.mp3"></audio>
-								<ul class="actions" >
-									<li><a href="#intro3" class="button" onclick="playClickSound()">Continue</a></li>
-								</ul>
-							</article>
-
-							<article id="intro3">
-								<h2 class="major"><..></h2>
-								<h3>Gaming ui/ux:</h3>
-								<h4>Must follow the below rules to get the best gaming experience.</h4>
-									<ol>
-										<li>Always use headphones.</li>
-										<li>Click (play music) button at the start of each stage for building the atmosphere.</li>
-										<li>Refresh the page if you dont want the background music.</li>
-										<li>Don't click the empty space outside the displayed cards.</li>
-										<li>Wait and don't click buttons till the instruction is given to click, when you see a typing message.</li>
-									</ol>
-								<audio id="clickSound" src="click.mp3"></audio>
-								<ul class="actions" >
-									<li><a href="#intro4" class="button" onclick="playClickSound()">Continue</a></li>
-								</ul>
-							</article>
-
-							<article id="intro4">
-								<h2 class="major"><..></h2>
-								<audio id="clickSound6" src="voice1.mp3" type="audio/mpeg"></audio>
-								<h3>Disclaimer/Developer's note</h3>
-									<blockquote>This game is a brainstorming game which questions your brain limit. Solve the puzzles/stages to prove your worth to be the ace. Hope
-										you find this game satisfying. </blockquote>
-										<hr>
-								<h3>Rewards and Points:</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Lists</th>
-													<th>Task</th>
-													<th>Points</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>One</td>
-													<td>Complete registration with payment</td>
-													<td>50pts</td>
-												</tr>
-												<tr>
-													<td>Two</td>
-													<td>Completion of each stages, individually</td>
-													<td>10pts</td>
-												</tr>
-												<tr>
-													<td>Three</td>
-													<td>Community engagement/tricking players</td>
-													<td>10pts</td>
-												</tr>
-												<tr>
-													<td>Four</td>
-													<td>First one to comnplete each stage</td>
-													<td>50pts</td>
-												</tr>
-												<tr>
-													<td>Five</td>
-													<td>Game contribution/engagement</td>
-													<td>10pts</td>
-												</tr>
-												<tr>
-													<td>Six</td>
-													<td>A reward from developer(in the end)</td>
-													<td>30pts</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</section>
-								
-
-								<audio id="clickSound" src="click.mp3"></audio>
-								<ul class="actions" >
-									<li><a href="#intro5" class="button" onclick="playClickSound6()">Continue</a></li>
-								</ul>
-							</article>
-							
 							<article id="intro5">
 							  <h2 class="major"><..></h2>
-								<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="10">So are you ready to embark on the journey to the unknown? Shall we begin...</p>
-								<ul class="actions">
-									<li><a href="#server" class="button" onclick="playClickSound()">Enter</a></li>
-								</ul>
+								<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="10">So are you ready to embark on the journey to the unknown? Shall we begin...
+									<a href="#server" class="button" onclick="playClickSound()">Enter</a></p>
+								
 							</article>
 
 						<!-- Work -->
@@ -261,27 +148,6 @@
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-		<script>
-			document.getElementById("myForm").addEventListener("submit", validateForm);
-		  
-			function validateForm(event) {
-			  event.preventDefault(); // Prevent form submission
-		  
-			  // Get the entered code
-			  var enteredCode = document.getElementById("code").value;
-		  
-			  // Compare the entered code with the stored code
-			  var storedCode = "tge2890"; // Replace with your actual stored code
-		  
-			  if (enteredCode === storedCode) {
-				// Code is valid, redirect to the desired page
-				window.location.href = "Stage1.html"; // Replace with your actual page URL
-			  } else {
-				// Code is invalid, display an error message
-				alert("Invalid Access Code. Please try again.");
-			  }
-			}
-		  </script>
 		  <script>
 			function playClickSound() {
   var clickSound = document.getElementById("clickSound");
@@ -339,9 +205,16 @@ bgContainer.appendChild(video);
 		}
 		
 		  </script>
+		  <script>
+			document.getElementById('main').addEventListener('click', function(event) {
+  event.stopPropagation();
+});
 
-		  
+		  </script>
+
+			<script src="assets/js/visibility.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/forms.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

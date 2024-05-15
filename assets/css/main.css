@@ -1248,7 +1248,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #73c2fb;
+				background: #ffffff;
 			}
 
 		#header > :first-child {
@@ -1263,7 +1263,7 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px #132437;
 			border-radius: 100%;
 		}
 
@@ -1273,9 +1273,11 @@ input, select, textarea {
 
 		#header .content {
 			border-style: solid;
-			border-color: #73c2fb;
-			border-top-width: 1px;
-			border-bottom-width: 1px;
+			border-color: #ffffff;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+			border-right-width: 0px;
+			border-left-width: 0px;
 			max-width: 100%;
 		}
 
@@ -1312,13 +1314,13 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #73c2fb;
+			border: solid 1px #ffffff;
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #73c2fb;
+				border-left: solid 1px #ffffff;
 			}
 
 				#header nav ul li:first-child {
@@ -1353,7 +1355,7 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #73c2fb;
+			background: #ffffff;
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1502,7 +1504,7 @@ input, select, textarea {
 		z-index: 3;
 	}
 
-		#main article {
+		$main._show article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
 			-ms-transform: translateY(0.25rem);
@@ -1547,7 +1549,7 @@ input, select, textarea {
 					-ms-transition: background-color 0.2s ease-in-out;
 					transition: background-color 0.2s ease-in-out;
 					content: '';
-					display: block;
+					display: none;
 					position: absolute;
 					top: 0.75rem;
 					left: 0.75rem;
@@ -1591,6 +1593,18 @@ input, select, textarea {
 			}
 
 		}
+
+		#overlay {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			background-color: transparent;
+		  }
+		  
 
 /* Footer */
 
