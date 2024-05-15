@@ -74,17 +74,10 @@
 
 				var $article = $main_articles.filter('#' + id);
 
-				 // Mark the body as article-open.
-  $body.addClass('is-article-open');
-
 				// No such article? Bail.
 					if ($article.length == 0)
 						return;
 
-
-
-
-			
 				// Handle lock.
 
 					// Already locked? Speed through "show" steps w/o delays.
@@ -95,9 +88,6 @@
 
 							// Mark as visible.
 								$body.addClass('is-article-visible');
-
-// Show the overlay.
-$('#overlay').show();
 
 							// Deactivate all articles (just in case one's already active).
 								$main_articles.removeClass('active');
@@ -211,9 +201,6 @@ $('#overlay').show();
 
 				var $article = $main_articles.filter('.active');
 
-				// Unmark the body as article-open.
-  $body.removeClass('is-article-open');
-
 				// Article not visible? Bail.
 					if (!$body.hasClass('is-article-visible'))
 						return;
@@ -222,7 +209,6 @@ $('#overlay').show();
 					if (typeof addState != 'undefined'
 					&&	addState === true)
 						history.pushState(null, null, '#');
-
 
 				// Handle lock.
 
@@ -246,8 +232,6 @@ $('#overlay').show();
 							// Unmark as visible.
 								$body.removeClass('is-article-visible');
 
-							// Hide the overlay.
-  $('#overlay').hide();
 							// Unlock.
 								locked = false;
 
@@ -322,20 +306,14 @@ $('#overlay').show();
 			});
 
 		// Events.
-		$body.on('click', function(event) {
-			// Check if the click event target is a descendant of the #main element.
-			if ($(event.target).closest('#main').length) {
-			  return;
-			}
-		  
-			// Article visible? Hide.
-			if ($body.hasClass('is-article-visible')) {
-			  $main._hide(true);
-			}
-		  });
-		  
-		  
-		  
+			$body.on('click', function(event) {
+
+				// Article visible? Hide.
+					if ($body.hasClass('is-article-visible'))
+						$main._hide(true);
+
+			});
+
 			$window.on('keyup', function(event) {
 
 				switch (event.keyCode) {
@@ -383,12 +361,6 @@ $('#overlay').show();
 					}
 
 			});
-
-			$('#main').on('click', function(event) {
-				if ($body.hasClass('is-article-open')) {
-				  event.stopPropagation();
-				}
-			  });
 
 		// Scroll restoration.
 		// This prevents the page from scrolling back to the top on a hashchange.
