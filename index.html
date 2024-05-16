@@ -28,7 +28,7 @@
 	<body class="is-preload">
 		
 		<audio id="opening-music"></audio>
-		<div id="overlay"></div>
+		
 
 		
 		<!-- Wrapper -->
@@ -90,16 +90,18 @@
 							<article id="intro">
 								<h2 class="major"><..></h2>
 								<p class="typecadence" data-typecadence-speed="5,15" data-typecadence-mistakes="10">Welcome seeker. You've entered into the Chronomatic Realm, your future.<br><br>
-								Seems like you want to seek the knowledge of the unknown. To have it, you must go through this maze. There will be guide throughout the journey.<br>
-								But before that, Let me introduce you to this 'ChronoMaze'. </p>
+								Seems like you want to seek the <b>'knowledge of the unknown'</b>. To have it, you must go through this maze. There will be guide throughout the journey.<br>
+								But before that, Let me introduce you to this <b>'ChronoMaze'</b>. </p>
+								<p><a id="continueButto" class="hidde" href="#intro2" onclick="playClickSound()" onclick="handleClick()"><b>[Continue]</b></a></p>
+							</article>
+							<article id="intro2">
+								<h2 class="major"><..></h2>
+								<p class="typecadence" data-typecadence-speed="5,15" data-typecadence-mistakes="10">In the chronomatic realm, you must have to go through the delusional and mind bending puzzles
+									and solve them with your wit. There is <b>'objective'</b> for each stages to guide you to complete the stage and <b>'hints'</b> to help you solve the puzzles. <u>Be aware!</u> The hints are more delusional than the actual puzzle.
+								The rest is in your hands. Seek the knowledge of the unknown and go beyond the realm. Goodluck! </p>
 								<p><a id="continueButto" class="hidde" href="#server" onclick="playClickSound()" onclick="handleClick()"><b>[Continue]</b></a></p>
 							</article>
-							<article id="intro5">
-							  <h2 class="major"><..></h2>
-								<p class="typecadence" data-typecadence-speed="18,25" data-typecadence-mistakes="10">So are you ready to embark on the journey to the unknown? Shall we begin...
-									<a href="#server" class="button" onclick="playClickSound()">Enter</a></p>
-								
-							</article>
+							
 
 						<!-- Work -->
 							<article id="server">
@@ -204,12 +206,6 @@ bgContainer.appendChild(video);
 		
 		}
 		
-		  </script>
-		  <script>
-			document.getElementById('main').addEventListener('click', function(event) {
-  event.stopPropagation();
-});
-
 		  </script>
 
 			<script src="assets/js/visibility.js"></script>
